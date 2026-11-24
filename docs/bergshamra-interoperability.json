@@ -1,0 +1,787 @@
+{
+  "repository": "https://github.com/kushaldas/bergshamra",
+  "commit": "9fcc0c1e1cc0145fb0b8cf417aaa694a635f212c",
+  "build": "cargo build --release --locked; default RustCrypto provider",
+  "scope": "Unmodified XML URIs and contexts; no key-info rewrite; explicit trusted public key",
+  "summary": {
+    "interoperable": 36,
+    "unsupported-key-format": 42,
+    "verification-failed": 27
+  },
+  "results": [
+    {
+      "id": "ml-dsa-44-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#ml-dsa-44",
+      "result": "interoperable",
+      "negative_checks": [
+        "payload",
+        "signature"
+      ],
+      "reverse": "PyCryptodome and OpenSSL verify with local XML profile/reference checks"
+    },
+    {
+      "id": "ml-dsa-44-786d6c736563",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#ml-dsa-44",
+      "result": "verification-failed",
+      "diagnostic": "INVALID: signature value verification failed"
+    },
+    {
+      "id": "ml-dsa-65-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#ml-dsa-65",
+      "result": "interoperable",
+      "negative_checks": [
+        "payload",
+        "signature"
+      ],
+      "reverse": "PyCryptodome and OpenSSL verify with local XML profile/reference checks"
+    },
+    {
+      "id": "ml-dsa-65-786d6c736563",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#ml-dsa-65",
+      "result": "verification-failed",
+      "diagnostic": "INVALID: signature value verification failed"
+    },
+    {
+      "id": "ml-dsa-87-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#ml-dsa-87",
+      "result": "interoperable",
+      "negative_checks": [
+        "payload",
+        "signature"
+      ],
+      "reverse": "PyCryptodome and OpenSSL verify with local XML profile/reference checks"
+    },
+    {
+      "id": "ml-dsa-87-786d6c736563",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#ml-dsa-87",
+      "result": "verification-failed",
+      "diagnostic": "INVALID: signature value verification failed"
+    },
+    {
+      "id": "slh-dsa-sha2-128s-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-128s",
+      "result": "interoperable",
+      "negative_checks": [
+        "payload",
+        "signature"
+      ],
+      "reverse": "PyCryptodome and OpenSSL verify with local XML profile/reference checks"
+    },
+    {
+      "id": "slh-dsa-sha2-128s-786d6c736563",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-128s",
+      "result": "verification-failed",
+      "diagnostic": "INVALID: signature value verification failed"
+    },
+    {
+      "id": "slh-dsa-sha2-128f-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-128f",
+      "result": "interoperable",
+      "negative_checks": [
+        "payload",
+        "signature"
+      ],
+      "reverse": "PyCryptodome and OpenSSL verify with local XML profile/reference checks"
+    },
+    {
+      "id": "slh-dsa-sha2-128f-786d6c736563",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-128f",
+      "result": "verification-failed",
+      "diagnostic": "INVALID: signature value verification failed"
+    },
+    {
+      "id": "slh-dsa-sha2-192s-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-192s",
+      "result": "interoperable",
+      "negative_checks": [
+        "payload",
+        "signature"
+      ],
+      "reverse": "PyCryptodome and OpenSSL verify with local XML profile/reference checks"
+    },
+    {
+      "id": "slh-dsa-sha2-192s-786d6c736563",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-192s",
+      "result": "verification-failed",
+      "diagnostic": "INVALID: signature value verification failed"
+    },
+    {
+      "id": "slh-dsa-sha2-192f-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-192f",
+      "result": "interoperable",
+      "negative_checks": [
+        "payload",
+        "signature"
+      ],
+      "reverse": "PyCryptodome and OpenSSL verify with local XML profile/reference checks"
+    },
+    {
+      "id": "slh-dsa-sha2-192f-786d6c736563",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-192f",
+      "result": "verification-failed",
+      "diagnostic": "INVALID: signature value verification failed"
+    },
+    {
+      "id": "slh-dsa-sha2-256s-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-256s",
+      "result": "interoperable",
+      "negative_checks": [
+        "payload",
+        "signature"
+      ],
+      "reverse": "PyCryptodome and OpenSSL verify with local XML profile/reference checks"
+    },
+    {
+      "id": "slh-dsa-sha2-256s-786d6c736563",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-256s",
+      "result": "verification-failed",
+      "diagnostic": "INVALID: signature value verification failed"
+    },
+    {
+      "id": "slh-dsa-sha2-256f-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-256f",
+      "result": "interoperable",
+      "negative_checks": [
+        "payload",
+        "signature"
+      ],
+      "reverse": "PyCryptodome and OpenSSL verify with local XML profile/reference checks"
+    },
+    {
+      "id": "slh-dsa-sha2-256f-786d6c736563",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-256f",
+      "result": "verification-failed",
+      "diagnostic": "INVALID: signature value verification failed"
+    },
+    {
+      "id": "slh-dsa-shake-128s-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-128s",
+      "result": "unsupported-key-format",
+      "diagnostic": "Error: key error: unable to auto-detect key format from PEM data"
+    },
+    {
+      "id": "slh-dsa-shake-128s-786d6c736563",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-128s",
+      "result": "unsupported-key-format",
+      "diagnostic": "Error: key error: unable to auto-detect key format from PEM data"
+    },
+    {
+      "id": "slh-dsa-shake-128f-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-128f",
+      "result": "unsupported-key-format",
+      "diagnostic": "Error: key error: unable to auto-detect key format from PEM data"
+    },
+    {
+      "id": "slh-dsa-shake-128f-786d6c736563",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-128f",
+      "result": "unsupported-key-format",
+      "diagnostic": "Error: key error: unable to auto-detect key format from PEM data"
+    },
+    {
+      "id": "slh-dsa-shake-192s-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-192s",
+      "result": "unsupported-key-format",
+      "diagnostic": "Error: key error: unable to auto-detect key format from PEM data"
+    },
+    {
+      "id": "slh-dsa-shake-192s-786d6c736563",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-192s",
+      "result": "unsupported-key-format",
+      "diagnostic": "Error: key error: unable to auto-detect key format from PEM data"
+    },
+    {
+      "id": "slh-dsa-shake-192f-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-192f",
+      "result": "unsupported-key-format",
+      "diagnostic": "Error: key error: unable to auto-detect key format from PEM data"
+    },
+    {
+      "id": "slh-dsa-shake-192f-786d6c736563",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-192f",
+      "result": "unsupported-key-format",
+      "diagnostic": "Error: key error: unable to auto-detect key format from PEM data"
+    },
+    {
+      "id": "slh-dsa-shake-256s-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-256s",
+      "result": "unsupported-key-format",
+      "diagnostic": "Error: key error: unable to auto-detect key format from PEM data"
+    },
+    {
+      "id": "slh-dsa-shake-256s-786d6c736563",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-256s",
+      "result": "unsupported-key-format",
+      "diagnostic": "Error: key error: unable to auto-detect key format from PEM data"
+    },
+    {
+      "id": "slh-dsa-shake-256f-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-256f",
+      "result": "unsupported-key-format",
+      "diagnostic": "Error: key error: unable to auto-detect key format from PEM data"
+    },
+    {
+      "id": "slh-dsa-shake-256f-786d6c736563",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-256f",
+      "result": "unsupported-key-format",
+      "diagnostic": "Error: key error: unable to auto-detect key format from PEM data"
+    },
+    {
+      "id": "ml-dsa-44-explicit-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#ml-dsa-44",
+      "result": "interoperable",
+      "negative_checks": [
+        "payload",
+        "signature"
+      ],
+      "reverse": "PyCryptodome and OpenSSL verify with local XML profile/reference checks"
+    },
+    {
+      "id": "ml-dsa-44-binary-context",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#ml-dsa-44",
+      "result": "verification-failed",
+      "diagnostic": "INVALID: signature value verification failed"
+    },
+    {
+      "id": "ml-dsa-44-context-255",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#ml-dsa-44",
+      "result": "verification-failed",
+      "diagnostic": "INVALID: signature value verification failed"
+    },
+    {
+      "id": "ml-dsa-44-wrapped-signature",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#ml-dsa-44",
+      "result": "interoperable",
+      "negative_checks": [
+        "payload",
+        "signature"
+      ],
+      "reverse": "PyCryptodome and OpenSSL verify with local XML profile/reference checks"
+    },
+    {
+      "id": "ml-dsa-44-wrapped-digest",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#ml-dsa-44",
+      "result": "interoperable",
+      "negative_checks": [
+        "payload",
+        "signature"
+      ],
+      "reverse": "PyCryptodome and OpenSSL verify with local XML profile/reference checks"
+    },
+    {
+      "id": "ml-dsa-65-explicit-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#ml-dsa-65",
+      "result": "interoperable",
+      "negative_checks": [
+        "payload",
+        "signature"
+      ],
+      "reverse": "PyCryptodome and OpenSSL verify with local XML profile/reference checks"
+    },
+    {
+      "id": "ml-dsa-65-binary-context",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#ml-dsa-65",
+      "result": "verification-failed",
+      "diagnostic": "INVALID: signature value verification failed"
+    },
+    {
+      "id": "ml-dsa-65-context-255",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#ml-dsa-65",
+      "result": "verification-failed",
+      "diagnostic": "INVALID: signature value verification failed"
+    },
+    {
+      "id": "ml-dsa-65-wrapped-signature",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#ml-dsa-65",
+      "result": "interoperable",
+      "negative_checks": [
+        "payload",
+        "signature"
+      ],
+      "reverse": "PyCryptodome and OpenSSL verify with local XML profile/reference checks"
+    },
+    {
+      "id": "ml-dsa-65-wrapped-digest",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#ml-dsa-65",
+      "result": "interoperable",
+      "negative_checks": [
+        "payload",
+        "signature"
+      ],
+      "reverse": "PyCryptodome and OpenSSL verify with local XML profile/reference checks"
+    },
+    {
+      "id": "ml-dsa-87-explicit-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#ml-dsa-87",
+      "result": "interoperable",
+      "negative_checks": [
+        "payload",
+        "signature"
+      ],
+      "reverse": "PyCryptodome and OpenSSL verify with local XML profile/reference checks"
+    },
+    {
+      "id": "ml-dsa-87-binary-context",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#ml-dsa-87",
+      "result": "verification-failed",
+      "diagnostic": "INVALID: signature value verification failed"
+    },
+    {
+      "id": "ml-dsa-87-context-255",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#ml-dsa-87",
+      "result": "verification-failed",
+      "diagnostic": "INVALID: signature value verification failed"
+    },
+    {
+      "id": "ml-dsa-87-wrapped-signature",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#ml-dsa-87",
+      "result": "interoperable",
+      "negative_checks": [
+        "payload",
+        "signature"
+      ],
+      "reverse": "PyCryptodome and OpenSSL verify with local XML profile/reference checks"
+    },
+    {
+      "id": "ml-dsa-87-wrapped-digest",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#ml-dsa-87",
+      "result": "interoperable",
+      "negative_checks": [
+        "payload",
+        "signature"
+      ],
+      "reverse": "PyCryptodome and OpenSSL verify with local XML profile/reference checks"
+    },
+    {
+      "id": "slh-dsa-sha2-128s-explicit-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-128s",
+      "result": "interoperable",
+      "negative_checks": [
+        "payload",
+        "signature"
+      ],
+      "reverse": "PyCryptodome and OpenSSL verify with local XML profile/reference checks"
+    },
+    {
+      "id": "slh-dsa-sha2-128s-binary-context",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-128s",
+      "result": "verification-failed",
+      "diagnostic": "INVALID: signature value verification failed"
+    },
+    {
+      "id": "slh-dsa-sha2-128s-context-255",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-128s",
+      "result": "verification-failed",
+      "diagnostic": "INVALID: signature value verification failed"
+    },
+    {
+      "id": "slh-dsa-sha2-128s-wrapped-signature",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-128s",
+      "result": "interoperable",
+      "negative_checks": [
+        "payload",
+        "signature"
+      ],
+      "reverse": "PyCryptodome and OpenSSL verify with local XML profile/reference checks"
+    },
+    {
+      "id": "slh-dsa-sha2-128s-wrapped-digest",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-128s",
+      "result": "interoperable",
+      "negative_checks": [
+        "payload",
+        "signature"
+      ],
+      "reverse": "PyCryptodome and OpenSSL verify with local XML profile/reference checks"
+    },
+    {
+      "id": "slh-dsa-sha2-128f-explicit-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-128f",
+      "result": "interoperable",
+      "negative_checks": [
+        "payload",
+        "signature"
+      ],
+      "reverse": "PyCryptodome and OpenSSL verify with local XML profile/reference checks"
+    },
+    {
+      "id": "slh-dsa-sha2-128f-binary-context",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-128f",
+      "result": "verification-failed",
+      "diagnostic": "INVALID: signature value verification failed"
+    },
+    {
+      "id": "slh-dsa-sha2-128f-context-255",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-128f",
+      "result": "verification-failed",
+      "diagnostic": "INVALID: signature value verification failed"
+    },
+    {
+      "id": "slh-dsa-sha2-128f-wrapped-signature",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-128f",
+      "result": "interoperable",
+      "negative_checks": [
+        "payload",
+        "signature"
+      ],
+      "reverse": "PyCryptodome and OpenSSL verify with local XML profile/reference checks"
+    },
+    {
+      "id": "slh-dsa-sha2-128f-wrapped-digest",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-128f",
+      "result": "interoperable",
+      "negative_checks": [
+        "payload",
+        "signature"
+      ],
+      "reverse": "PyCryptodome and OpenSSL verify with local XML profile/reference checks"
+    },
+    {
+      "id": "slh-dsa-sha2-192s-explicit-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-192s",
+      "result": "interoperable",
+      "negative_checks": [
+        "payload",
+        "signature"
+      ],
+      "reverse": "PyCryptodome and OpenSSL verify with local XML profile/reference checks"
+    },
+    {
+      "id": "slh-dsa-sha2-192s-binary-context",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-192s",
+      "result": "verification-failed",
+      "diagnostic": "INVALID: signature value verification failed"
+    },
+    {
+      "id": "slh-dsa-sha2-192s-context-255",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-192s",
+      "result": "verification-failed",
+      "diagnostic": "INVALID: signature value verification failed"
+    },
+    {
+      "id": "slh-dsa-sha2-192s-wrapped-signature",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-192s",
+      "result": "interoperable",
+      "negative_checks": [
+        "payload",
+        "signature"
+      ],
+      "reverse": "PyCryptodome and OpenSSL verify with local XML profile/reference checks"
+    },
+    {
+      "id": "slh-dsa-sha2-192s-wrapped-digest",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-192s",
+      "result": "interoperable",
+      "negative_checks": [
+        "payload",
+        "signature"
+      ],
+      "reverse": "PyCryptodome and OpenSSL verify with local XML profile/reference checks"
+    },
+    {
+      "id": "slh-dsa-sha2-192f-explicit-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-192f",
+      "result": "interoperable",
+      "negative_checks": [
+        "payload",
+        "signature"
+      ],
+      "reverse": "PyCryptodome and OpenSSL verify with local XML profile/reference checks"
+    },
+    {
+      "id": "slh-dsa-sha2-192f-binary-context",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-192f",
+      "result": "verification-failed",
+      "diagnostic": "INVALID: signature value verification failed"
+    },
+    {
+      "id": "slh-dsa-sha2-192f-context-255",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-192f",
+      "result": "verification-failed",
+      "diagnostic": "INVALID: signature value verification failed"
+    },
+    {
+      "id": "slh-dsa-sha2-192f-wrapped-signature",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-192f",
+      "result": "interoperable",
+      "negative_checks": [
+        "payload",
+        "signature"
+      ],
+      "reverse": "PyCryptodome and OpenSSL verify with local XML profile/reference checks"
+    },
+    {
+      "id": "slh-dsa-sha2-192f-wrapped-digest",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-192f",
+      "result": "interoperable",
+      "negative_checks": [
+        "payload",
+        "signature"
+      ],
+      "reverse": "PyCryptodome and OpenSSL verify with local XML profile/reference checks"
+    },
+    {
+      "id": "slh-dsa-sha2-256s-explicit-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-256s",
+      "result": "interoperable",
+      "negative_checks": [
+        "payload",
+        "signature"
+      ],
+      "reverse": "PyCryptodome and OpenSSL verify with local XML profile/reference checks"
+    },
+    {
+      "id": "slh-dsa-sha2-256s-binary-context",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-256s",
+      "result": "verification-failed",
+      "diagnostic": "INVALID: signature value verification failed"
+    },
+    {
+      "id": "slh-dsa-sha2-256s-context-255",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-256s",
+      "result": "verification-failed",
+      "diagnostic": "INVALID: signature value verification failed"
+    },
+    {
+      "id": "slh-dsa-sha2-256s-wrapped-signature",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-256s",
+      "result": "interoperable",
+      "negative_checks": [
+        "payload",
+        "signature"
+      ],
+      "reverse": "PyCryptodome and OpenSSL verify with local XML profile/reference checks"
+    },
+    {
+      "id": "slh-dsa-sha2-256s-wrapped-digest",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-256s",
+      "result": "interoperable",
+      "negative_checks": [
+        "payload",
+        "signature"
+      ],
+      "reverse": "PyCryptodome and OpenSSL verify with local XML profile/reference checks"
+    },
+    {
+      "id": "slh-dsa-sha2-256f-explicit-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-256f",
+      "result": "interoperable",
+      "negative_checks": [
+        "payload",
+        "signature"
+      ],
+      "reverse": "PyCryptodome and OpenSSL verify with local XML profile/reference checks"
+    },
+    {
+      "id": "slh-dsa-sha2-256f-binary-context",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-256f",
+      "result": "verification-failed",
+      "diagnostic": "INVALID: signature value verification failed"
+    },
+    {
+      "id": "slh-dsa-sha2-256f-context-255",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-256f",
+      "result": "verification-failed",
+      "diagnostic": "INVALID: signature value verification failed"
+    },
+    {
+      "id": "slh-dsa-sha2-256f-wrapped-signature",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-256f",
+      "result": "interoperable",
+      "negative_checks": [
+        "payload",
+        "signature"
+      ],
+      "reverse": "PyCryptodome and OpenSSL verify with local XML profile/reference checks"
+    },
+    {
+      "id": "slh-dsa-sha2-256f-wrapped-digest",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-256f",
+      "result": "interoperable",
+      "negative_checks": [
+        "payload",
+        "signature"
+      ],
+      "reverse": "PyCryptodome and OpenSSL verify with local XML profile/reference checks"
+    },
+    {
+      "id": "slh-dsa-shake-128s-explicit-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-128s",
+      "result": "unsupported-key-format",
+      "diagnostic": "Error: key error: unable to auto-detect key format from PEM data"
+    },
+    {
+      "id": "slh-dsa-shake-128s-binary-context",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-128s",
+      "result": "unsupported-key-format",
+      "diagnostic": "Error: key error: unable to auto-detect key format from PEM data"
+    },
+    {
+      "id": "slh-dsa-shake-128s-context-255",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-128s",
+      "result": "unsupported-key-format",
+      "diagnostic": "Error: key error: unable to auto-detect key format from PEM data"
+    },
+    {
+      "id": "slh-dsa-shake-128s-wrapped-signature",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-128s",
+      "result": "unsupported-key-format",
+      "diagnostic": "Error: key error: unable to auto-detect key format from PEM data"
+    },
+    {
+      "id": "slh-dsa-shake-128s-wrapped-digest",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-128s",
+      "result": "unsupported-key-format",
+      "diagnostic": "Error: key error: unable to auto-detect key format from PEM data"
+    },
+    {
+      "id": "slh-dsa-shake-128f-explicit-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-128f",
+      "result": "unsupported-key-format",
+      "diagnostic": "Error: key error: unable to auto-detect key format from PEM data"
+    },
+    {
+      "id": "slh-dsa-shake-128f-binary-context",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-128f",
+      "result": "unsupported-key-format",
+      "diagnostic": "Error: key error: unable to auto-detect key format from PEM data"
+    },
+    {
+      "id": "slh-dsa-shake-128f-context-255",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-128f",
+      "result": "unsupported-key-format",
+      "diagnostic": "Error: key error: unable to auto-detect key format from PEM data"
+    },
+    {
+      "id": "slh-dsa-shake-128f-wrapped-signature",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-128f",
+      "result": "unsupported-key-format",
+      "diagnostic": "Error: key error: unable to auto-detect key format from PEM data"
+    },
+    {
+      "id": "slh-dsa-shake-128f-wrapped-digest",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-128f",
+      "result": "unsupported-key-format",
+      "diagnostic": "Error: key error: unable to auto-detect key format from PEM data"
+    },
+    {
+      "id": "slh-dsa-shake-192s-explicit-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-192s",
+      "result": "unsupported-key-format",
+      "diagnostic": "Error: key error: unable to auto-detect key format from PEM data"
+    },
+    {
+      "id": "slh-dsa-shake-192s-binary-context",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-192s",
+      "result": "unsupported-key-format",
+      "diagnostic": "Error: key error: unable to auto-detect key format from PEM data"
+    },
+    {
+      "id": "slh-dsa-shake-192s-context-255",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-192s",
+      "result": "unsupported-key-format",
+      "diagnostic": "Error: key error: unable to auto-detect key format from PEM data"
+    },
+    {
+      "id": "slh-dsa-shake-192s-wrapped-signature",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-192s",
+      "result": "unsupported-key-format",
+      "diagnostic": "Error: key error: unable to auto-detect key format from PEM data"
+    },
+    {
+      "id": "slh-dsa-shake-192s-wrapped-digest",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-192s",
+      "result": "unsupported-key-format",
+      "diagnostic": "Error: key error: unable to auto-detect key format from PEM data"
+    },
+    {
+      "id": "slh-dsa-shake-192f-explicit-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-192f",
+      "result": "unsupported-key-format",
+      "diagnostic": "Error: key error: unable to auto-detect key format from PEM data"
+    },
+    {
+      "id": "slh-dsa-shake-192f-binary-context",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-192f",
+      "result": "unsupported-key-format",
+      "diagnostic": "Error: key error: unable to auto-detect key format from PEM data"
+    },
+    {
+      "id": "slh-dsa-shake-192f-context-255",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-192f",
+      "result": "unsupported-key-format",
+      "diagnostic": "Error: key error: unable to auto-detect key format from PEM data"
+    },
+    {
+      "id": "slh-dsa-shake-192f-wrapped-signature",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-192f",
+      "result": "unsupported-key-format",
+      "diagnostic": "Error: key error: unable to auto-detect key format from PEM data"
+    },
+    {
+      "id": "slh-dsa-shake-192f-wrapped-digest",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-192f",
+      "result": "unsupported-key-format",
+      "diagnostic": "Error: key error: unable to auto-detect key format from PEM data"
+    },
+    {
+      "id": "slh-dsa-shake-256s-explicit-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-256s",
+      "result": "unsupported-key-format",
+      "diagnostic": "Error: key error: unable to auto-detect key format from PEM data"
+    },
+    {
+      "id": "slh-dsa-shake-256s-binary-context",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-256s",
+      "result": "unsupported-key-format",
+      "diagnostic": "Error: key error: unable to auto-detect key format from PEM data"
+    },
+    {
+      "id": "slh-dsa-shake-256s-context-255",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-256s",
+      "result": "unsupported-key-format",
+      "diagnostic": "Error: key error: unable to auto-detect key format from PEM data"
+    },
+    {
+      "id": "slh-dsa-shake-256s-wrapped-signature",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-256s",
+      "result": "unsupported-key-format",
+      "diagnostic": "Error: key error: unable to auto-detect key format from PEM data"
+    },
+    {
+      "id": "slh-dsa-shake-256s-wrapped-digest",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-256s",
+      "result": "unsupported-key-format",
+      "diagnostic": "Error: key error: unable to auto-detect key format from PEM data"
+    },
+    {
+      "id": "slh-dsa-shake-256f-explicit-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-256f",
+      "result": "unsupported-key-format",
+      "diagnostic": "Error: key error: unable to auto-detect key format from PEM data"
+    },
+    {
+      "id": "slh-dsa-shake-256f-binary-context",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-256f",
+      "result": "unsupported-key-format",
+      "diagnostic": "Error: key error: unable to auto-detect key format from PEM data"
+    },
+    {
+      "id": "slh-dsa-shake-256f-context-255",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-256f",
+      "result": "unsupported-key-format",
+      "diagnostic": "Error: key error: unable to auto-detect key format from PEM data"
+    },
+    {
+      "id": "slh-dsa-shake-256f-wrapped-signature",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-256f",
+      "result": "unsupported-key-format",
+      "diagnostic": "Error: key error: unable to auto-detect key format from PEM data"
+    },
+    {
+      "id": "slh-dsa-shake-256f-wrapped-digest",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-256f",
+      "result": "unsupported-key-format",
+      "diagnostic": "Error: key error: unable to auto-detect key format from PEM data"
+    }
+  ]
+}

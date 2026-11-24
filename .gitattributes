@@ -1,0 +1,5 @@
+# Preserve exact fixture and vendored-source bytes across platforms.
+# Whitespace is intentional signed input in the XML boundary fixtures.
+vectors/** -text -whitespace
+references/** -text -whitespace
+schemas/xmldsig-core-schema.xsd -text -whitespace

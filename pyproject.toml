@@ -1,0 +1,17 @@
+[project]
+name = "rfc9231bis-test-vectors"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = [
+    "cryptography>=50.0.2",
+    "lxml>=6.1.3",
+    "pycryptodome>=4.6.0",
+    "pytest>=9.2.0",
+    "signxml>=5.3.1",
+    "xmlsec>=1.3.18",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+markers = ["native_xml: requires the pinned upstream libxmlsec CLI build"]

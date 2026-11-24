@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.w3.org/2026/08/xmldsig-more#"
+           xmlns:m="http://www.w3.org/2026/08/xmldsig-more#" elementFormDefault="qualified">
+  <!-- Equivalent constraint to draft -11 Appendix E; semantic rules are tested separately. -->
+  <xs:simpleType name="SignatureContextType">
+    <xs:restriction base="xs:base64Binary"><xs:maxLength value="255"/></xs:restriction>
+  </xs:simpleType>
+  <xs:element name="SignatureContext" type="m:SignatureContextType"/>
+</xs:schema>

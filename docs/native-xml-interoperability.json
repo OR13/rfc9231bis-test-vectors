@@ -1,0 +1,475 @@
+{
+  "library": "xmlsec1 1.3.14 (openssl)",
+  "build": {
+    "repository": "https://github.com/lsh123/xmlsec",
+    "commit": "eb3cd78a4731aaff7b69818d212071a6fd1d75fd",
+    "configure_options": [
+      "--with-openssl=/opt/homebrew/Cellar/openssl@3/3.6.4",
+      "--with-default-crypto=openssl",
+      "--disable-crypto-dl",
+      "--without-gnutls",
+      "--without-nss",
+      "--without-gcrypt",
+      "--without-libxslt",
+      "--enable-ml-dsa",
+      "--enable-slh-dsa"
+    ],
+    "make_cflags": "-O2 -Wno-error=newline-eof",
+    "upstream_test": "make check-dsig XMLSEC_TEST_NAME=aleksey-xmldsig-01/enveloped-sha512-mldsa44-with-signature-context",
+    "upstream_test_result": "pass",
+    "source_patches": []
+  },
+  "scope": "No URI remapping or custom crypto transform. Only KeyInfo/KeyName added outside SignedInfo.",
+  "summary": {
+    "interoperable": 25,
+    "unsupported": 12,
+    "verification-failed": 1
+  },
+  "pq_summary": {
+    "interoperable": 18,
+    "unsupported": 12,
+    "verification-failed": 0
+  },
+  "results": [
+    {
+      "id": "ed25519-empty",
+      "uri": "http://www.w3.org/2021/04/xmldsig-more#eddsa-ed25519",
+      "kind": "eddsa",
+      "result": "interoperable",
+      "forward": "libxmlsec verifies original signature and XML references",
+      "reverse": "libxmlsec signs; PyCryptodome and OpenSSL verify; local adapter validates XML profile/digest",
+      "negative_checks": [
+        "payload",
+        "signature"
+      ],
+      "signed_info_unchanged_by_keyname": true
+    },
+    {
+      "id": "ed25519ctx-786d6c736563",
+      "uri": "http://www.w3.org/2021/04/xmldsig-more#eddsa-ed25519ctx",
+      "kind": "eddsa",
+      "result": "interoperable",
+      "forward": "libxmlsec verifies original signature and XML references",
+      "reverse": "libxmlsec signs; PyCryptodome and OpenSSL verify; local adapter validates XML profile/digest",
+      "negative_checks": [
+        "payload",
+        "signature",
+        "context"
+      ],
+      "signed_info_unchanged_by_keyname": true
+    },
+    {
+      "id": "ed25519ph-empty",
+      "uri": "http://www.w3.org/2021/04/xmldsig-more#eddsa-ed25519ph",
+      "kind": "eddsa",
+      "result": "interoperable",
+      "forward": "libxmlsec verifies original signature and XML references",
+      "reverse": "libxmlsec signs; PyCryptodome and OpenSSL verify; local adapter validates XML profile/digest",
+      "negative_checks": [
+        "payload",
+        "signature"
+      ],
+      "signed_info_unchanged_by_keyname": true
+    },
+    {
+      "id": "ed25519ph-786d6c736563",
+      "uri": "http://www.w3.org/2021/04/xmldsig-more#eddsa-ed25519ph",
+      "kind": "eddsa",
+      "result": "interoperable",
+      "forward": "libxmlsec verifies original signature and XML references",
+      "reverse": "libxmlsec signs; PyCryptodome and OpenSSL verify; local adapter validates XML profile/digest",
+      "negative_checks": [
+        "payload",
+        "signature",
+        "context"
+      ],
+      "signed_info_unchanged_by_keyname": true
+    },
+    {
+      "id": "ed448-empty",
+      "uri": "http://www.w3.org/2021/04/xmldsig-more#eddsa-ed448",
+      "kind": "eddsa",
+      "result": "interoperable",
+      "forward": "libxmlsec verifies original signature and XML references",
+      "reverse": "libxmlsec signs; PyCryptodome and OpenSSL verify; local adapter validates XML profile/digest",
+      "negative_checks": [
+        "payload",
+        "signature"
+      ],
+      "signed_info_unchanged_by_keyname": true
+    },
+    {
+      "id": "ed448-786d6c736563",
+      "uri": "http://www.w3.org/2021/04/xmldsig-more#eddsa-ed448",
+      "kind": "eddsa",
+      "result": "verification-failed",
+      "diagnostic": "Verification status: FAILED\nFailure reason: SIGNATURE\nError: failed to verify file \"<temporary>/input.xml\""
+    },
+    {
+      "id": "ed448ph-empty",
+      "uri": "http://www.w3.org/2021/04/xmldsig-more#eddsa-ed448ph",
+      "kind": "eddsa",
+      "result": "interoperable",
+      "forward": "libxmlsec verifies original signature and XML references",
+      "reverse": "libxmlsec signs; PyCryptodome and OpenSSL verify; local adapter validates XML profile/digest",
+      "negative_checks": [
+        "payload",
+        "signature"
+      ],
+      "signed_info_unchanged_by_keyname": true
+    },
+    {
+      "id": "ed448ph-786d6c736563",
+      "uri": "http://www.w3.org/2021/04/xmldsig-more#eddsa-ed448ph",
+      "kind": "eddsa",
+      "result": "interoperable",
+      "forward": "libxmlsec verifies original signature and XML references",
+      "reverse": "libxmlsec signs; PyCryptodome and OpenSSL verify; local adapter validates XML profile/digest",
+      "negative_checks": [
+        "payload",
+        "signature",
+        "context"
+      ],
+      "signed_info_unchanged_by_keyname": true
+    },
+    {
+      "id": "ml-dsa-44-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#ml-dsa-44",
+      "kind": "pqsig",
+      "result": "interoperable",
+      "forward": "libxmlsec verifies original signature and XML references",
+      "reverse": "libxmlsec signs; PyCryptodome and OpenSSL verify; local adapter validates XML profile/digest",
+      "negative_checks": [
+        "payload",
+        "signature"
+      ],
+      "signed_info_unchanged_by_keyname": true
+    },
+    {
+      "id": "ml-dsa-44-786d6c736563",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#ml-dsa-44",
+      "kind": "pqsig",
+      "result": "interoperable",
+      "forward": "libxmlsec verifies original signature and XML references",
+      "reverse": "libxmlsec signs; PyCryptodome and OpenSSL verify; local adapter validates XML profile/digest",
+      "negative_checks": [
+        "payload",
+        "signature",
+        "context"
+      ],
+      "signed_info_unchanged_by_keyname": true
+    },
+    {
+      "id": "ml-dsa-65-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#ml-dsa-65",
+      "kind": "pqsig",
+      "result": "interoperable",
+      "forward": "libxmlsec verifies original signature and XML references",
+      "reverse": "libxmlsec signs; PyCryptodome and OpenSSL verify; local adapter validates XML profile/digest",
+      "negative_checks": [
+        "payload",
+        "signature"
+      ],
+      "signed_info_unchanged_by_keyname": true
+    },
+    {
+      "id": "ml-dsa-65-786d6c736563",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#ml-dsa-65",
+      "kind": "pqsig",
+      "result": "interoperable",
+      "forward": "libxmlsec verifies original signature and XML references",
+      "reverse": "libxmlsec signs; PyCryptodome and OpenSSL verify; local adapter validates XML profile/digest",
+      "negative_checks": [
+        "payload",
+        "signature",
+        "context"
+      ],
+      "signed_info_unchanged_by_keyname": true
+    },
+    {
+      "id": "ml-dsa-87-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#ml-dsa-87",
+      "kind": "pqsig",
+      "result": "interoperable",
+      "forward": "libxmlsec verifies original signature and XML references",
+      "reverse": "libxmlsec signs; PyCryptodome and OpenSSL verify; local adapter validates XML profile/digest",
+      "negative_checks": [
+        "payload",
+        "signature"
+      ],
+      "signed_info_unchanged_by_keyname": true
+    },
+    {
+      "id": "ml-dsa-87-786d6c736563",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#ml-dsa-87",
+      "kind": "pqsig",
+      "result": "interoperable",
+      "forward": "libxmlsec verifies original signature and XML references",
+      "reverse": "libxmlsec signs; PyCryptodome and OpenSSL verify; local adapter validates XML profile/digest",
+      "negative_checks": [
+        "payload",
+        "signature",
+        "context"
+      ],
+      "signed_info_unchanged_by_keyname": true
+    },
+    {
+      "id": "slh-dsa-sha2-128s-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-128s",
+      "kind": "pqsig",
+      "result": "interoperable",
+      "forward": "libxmlsec verifies original signature and XML references",
+      "reverse": "libxmlsec signs; PyCryptodome and OpenSSL verify; local adapter validates XML profile/digest",
+      "negative_checks": [
+        "payload",
+        "signature"
+      ],
+      "signed_info_unchanged_by_keyname": true
+    },
+    {
+      "id": "slh-dsa-sha2-128s-786d6c736563",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-128s",
+      "kind": "pqsig",
+      "result": "interoperable",
+      "forward": "libxmlsec verifies original signature and XML references",
+      "reverse": "libxmlsec signs; PyCryptodome and OpenSSL verify; local adapter validates XML profile/digest",
+      "negative_checks": [
+        "payload",
+        "signature",
+        "context"
+      ],
+      "signed_info_unchanged_by_keyname": true
+    },
+    {
+      "id": "slh-dsa-sha2-128f-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-128f",
+      "kind": "pqsig",
+      "result": "interoperable",
+      "forward": "libxmlsec verifies original signature and XML references",
+      "reverse": "libxmlsec signs; PyCryptodome and OpenSSL verify; local adapter validates XML profile/digest",
+      "negative_checks": [
+        "payload",
+        "signature"
+      ],
+      "signed_info_unchanged_by_keyname": true
+    },
+    {
+      "id": "slh-dsa-sha2-128f-786d6c736563",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-128f",
+      "kind": "pqsig",
+      "result": "interoperable",
+      "forward": "libxmlsec verifies original signature and XML references",
+      "reverse": "libxmlsec signs; PyCryptodome and OpenSSL verify; local adapter validates XML profile/digest",
+      "negative_checks": [
+        "payload",
+        "signature",
+        "context"
+      ],
+      "signed_info_unchanged_by_keyname": true
+    },
+    {
+      "id": "slh-dsa-sha2-192s-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-192s",
+      "kind": "pqsig",
+      "result": "interoperable",
+      "forward": "libxmlsec verifies original signature and XML references",
+      "reverse": "libxmlsec signs; PyCryptodome and OpenSSL verify; local adapter validates XML profile/digest",
+      "negative_checks": [
+        "payload",
+        "signature"
+      ],
+      "signed_info_unchanged_by_keyname": true
+    },
+    {
+      "id": "slh-dsa-sha2-192s-786d6c736563",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-192s",
+      "kind": "pqsig",
+      "result": "interoperable",
+      "forward": "libxmlsec verifies original signature and XML references",
+      "reverse": "libxmlsec signs; PyCryptodome and OpenSSL verify; local adapter validates XML profile/digest",
+      "negative_checks": [
+        "payload",
+        "signature",
+        "context"
+      ],
+      "signed_info_unchanged_by_keyname": true
+    },
+    {
+      "id": "slh-dsa-sha2-192f-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-192f",
+      "kind": "pqsig",
+      "result": "interoperable",
+      "forward": "libxmlsec verifies original signature and XML references",
+      "reverse": "libxmlsec signs; PyCryptodome and OpenSSL verify; local adapter validates XML profile/digest",
+      "negative_checks": [
+        "payload",
+        "signature"
+      ],
+      "signed_info_unchanged_by_keyname": true
+    },
+    {
+      "id": "slh-dsa-sha2-192f-786d6c736563",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-192f",
+      "kind": "pqsig",
+      "result": "interoperable",
+      "forward": "libxmlsec verifies original signature and XML references",
+      "reverse": "libxmlsec signs; PyCryptodome and OpenSSL verify; local adapter validates XML profile/digest",
+      "negative_checks": [
+        "payload",
+        "signature",
+        "context"
+      ],
+      "signed_info_unchanged_by_keyname": true
+    },
+    {
+      "id": "slh-dsa-sha2-256s-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-256s",
+      "kind": "pqsig",
+      "result": "interoperable",
+      "forward": "libxmlsec verifies original signature and XML references",
+      "reverse": "libxmlsec signs; PyCryptodome and OpenSSL verify; local adapter validates XML profile/digest",
+      "negative_checks": [
+        "payload",
+        "signature"
+      ],
+      "signed_info_unchanged_by_keyname": true
+    },
+    {
+      "id": "slh-dsa-sha2-256s-786d6c736563",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-256s",
+      "kind": "pqsig",
+      "result": "interoperable",
+      "forward": "libxmlsec verifies original signature and XML references",
+      "reverse": "libxmlsec signs; PyCryptodome and OpenSSL verify; local adapter validates XML profile/digest",
+      "negative_checks": [
+        "payload",
+        "signature",
+        "context"
+      ],
+      "signed_info_unchanged_by_keyname": true
+    },
+    {
+      "id": "slh-dsa-sha2-256f-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-256f",
+      "kind": "pqsig",
+      "result": "interoperable",
+      "forward": "libxmlsec verifies original signature and XML references",
+      "reverse": "libxmlsec signs; PyCryptodome and OpenSSL verify; local adapter validates XML profile/digest",
+      "negative_checks": [
+        "payload",
+        "signature"
+      ],
+      "signed_info_unchanged_by_keyname": true
+    },
+    {
+      "id": "slh-dsa-sha2-256f-786d6c736563",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-256f",
+      "kind": "pqsig",
+      "result": "interoperable",
+      "forward": "libxmlsec verifies original signature and XML references",
+      "reverse": "libxmlsec signs; PyCryptodome and OpenSSL verify; local adapter validates XML profile/digest",
+      "negative_checks": [
+        "payload",
+        "signature",
+        "context"
+      ],
+      "signed_info_unchanged_by_keyname": true
+    },
+    {
+      "id": "slh-dsa-shake-128s-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-128s",
+      "kind": "pqsig",
+      "result": "unsupported",
+      "diagnostic": "Error: xmlSecCryptoAppKeyLoadEx failed: files=<temporary>/pub.pem\nError: failed to load public key from \"<temporary>/pub.pem\".\nError: keys manager creation failed\nUnknown command",
+      "reason": "Algorithm transform not registered in this build"
+    },
+    {
+      "id": "slh-dsa-shake-128s-786d6c736563",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-128s",
+      "kind": "pqsig",
+      "result": "unsupported",
+      "diagnostic": "Error: xmlSecCryptoAppKeyLoadEx failed: files=<temporary>/pub.pem\nError: failed to load public key from \"<temporary>/pub.pem\".\nError: keys manager creation failed\nUnknown command",
+      "reason": "Algorithm transform not registered in this build"
+    },
+    {
+      "id": "slh-dsa-shake-128f-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-128f",
+      "kind": "pqsig",
+      "result": "unsupported",
+      "diagnostic": "Error: xmlSecCryptoAppKeyLoadEx failed: files=<temporary>/pub.pem\nError: failed to load public key from \"<temporary>/pub.pem\".\nError: keys manager creation failed\nUnknown command",
+      "reason": "Algorithm transform not registered in this build"
+    },
+    {
+      "id": "slh-dsa-shake-128f-786d6c736563",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-128f",
+      "kind": "pqsig",
+      "result": "unsupported",
+      "diagnostic": "Error: xmlSecCryptoAppKeyLoadEx failed: files=<temporary>/pub.pem\nError: failed to load public key from \"<temporary>/pub.pem\".\nError: keys manager creation failed\nUnknown command",
+      "reason": "Algorithm transform not registered in this build"
+    },
+    {
+      "id": "slh-dsa-shake-192s-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-192s",
+      "kind": "pqsig",
+      "result": "unsupported",
+      "diagnostic": "Error: xmlSecCryptoAppKeyLoadEx failed: files=<temporary>/pub.pem\nError: failed to load public key from \"<temporary>/pub.pem\".\nError: keys manager creation failed\nUnknown command",
+      "reason": "Algorithm transform not registered in this build"
+    },
+    {
+      "id": "slh-dsa-shake-192s-786d6c736563",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-192s",
+      "kind": "pqsig",
+      "result": "unsupported",
+      "diagnostic": "Error: xmlSecCryptoAppKeyLoadEx failed: files=<temporary>/pub.pem\nError: failed to load public key from \"<temporary>/pub.pem\".\nError: keys manager creation failed\nUnknown command",
+      "reason": "Algorithm transform not registered in this build"
+    },
+    {
+      "id": "slh-dsa-shake-192f-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-192f",
+      "kind": "pqsig",
+      "result": "unsupported",
+      "diagnostic": "Error: xmlSecCryptoAppKeyLoadEx failed: files=<temporary>/pub.pem\nError: failed to load public key from \"<temporary>/pub.pem\".\nError: keys manager creation failed\nUnknown command",
+      "reason": "Algorithm transform not registered in this build"
+    },
+    {
+      "id": "slh-dsa-shake-192f-786d6c736563",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-192f",
+      "kind": "pqsig",
+      "result": "unsupported",
+      "diagnostic": "Error: xmlSecCryptoAppKeyLoadEx failed: files=<temporary>/pub.pem\nError: failed to load public key from \"<temporary>/pub.pem\".\nError: keys manager creation failed\nUnknown command",
+      "reason": "Algorithm transform not registered in this build"
+    },
+    {
+      "id": "slh-dsa-shake-256s-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-256s",
+      "kind": "pqsig",
+      "result": "unsupported",
+      "diagnostic": "Error: xmlSecCryptoAppKeyLoadEx failed: files=<temporary>/pub.pem\nError: failed to load public key from \"<temporary>/pub.pem\".\nError: keys manager creation failed\nUnknown command",
+      "reason": "Algorithm transform not registered in this build"
+    },
+    {
+      "id": "slh-dsa-shake-256s-786d6c736563",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-256s",
+      "kind": "pqsig",
+      "result": "unsupported",
+      "diagnostic": "Error: xmlSecCryptoAppKeyLoadEx failed: files=<temporary>/pub.pem\nError: failed to load public key from \"<temporary>/pub.pem\".\nError: keys manager creation failed\nUnknown command",
+      "reason": "Algorithm transform not registered in this build"
+    },
+    {
+      "id": "slh-dsa-shake-256f-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-256f",
+      "kind": "pqsig",
+      "result": "unsupported",
+      "diagnostic": "Error: xmlSecCryptoAppKeyLoadEx failed: files=<temporary>/pub.pem\nError: failed to load public key from \"<temporary>/pub.pem\".\nError: keys manager creation failed\nUnknown command",
+      "reason": "Algorithm transform not registered in this build"
+    },
+    {
+      "id": "slh-dsa-shake-256f-786d6c736563",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-256f",
+      "kind": "pqsig",
+      "result": "unsupported",
+      "diagnostic": "Error: xmlSecCryptoAppKeyLoadEx failed: files=<temporary>/pub.pem\nError: failed to load public key from \"<temporary>/pub.pem\".\nError: keys manager creation failed\nUnknown command",
+      "reason": "Algorithm transform not registered in this build"
+    }
+  ]
+}

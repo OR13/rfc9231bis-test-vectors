@@ -1,0 +1,24 @@
+# Open-source cross-testing options
+
+Investigated November 24, 2026. A crypto primitive implementation does not automatically recognize an XML algorithm URI or implement its parameter rules. Actual test results below apply to the versions in [verification.json](verification.json).
+
+| Library | What it contributes | Status in this repository |
+| --- | --- | --- |
+| [SignXML](https://xml-security.github.io/signxml/) | Python XML signatures; RSA, ECDSA, HMAC, fixed-parameter PSS including SHA-3; canonicalization and reference processing | Generates and verifies 24 XML fixtures. Mutation checks reject modified payloads. |
+| [XML Security Library / libxmlsec](https://github.com/lsh123/xmlsec) via [python-xmlsec](https://github.com/xmlsec/python-xmlsec) | Separate XML signature/encryption implementation with pluggable crypto backends | Released wheel verifies the 24 classical fixtures. A pinned unmodified 1.3.14 development build additionally verifies/re-signs 18 PQ cases across all ML-DSA and SHA2-based SLH-DSA variants, including contexts; see [native results](native-xml.md). |
+| [PyCryptodome](https://www.pycryptodome.org/) | Hashes, HMAC, RSA, ECDSA, EdDSA, symmetric crypto; installed version also includes MLDSA, SLHDSA, MLKEM modules | Main deterministic generator. PQ signatures use pure-message APIs with explicit contexts, not HashML-DSA/HashSLH-DSA. |
+| [OpenSSL](https://docs.openssl.org/3.6/man7/EVP_SIGNATURE-ML-DSA/) | RSA and EdDSA variants, ML-DSA, SLH-DSA, ML-KEM, legacy-provider algorithms | Explicit CLI/EVP audit confirms 202/203 primitive vectors plus 24 XML reference digests/signatures. Native OpenSSL wrapping verifies Camellia/SEED; variable-key-length EVP verifies RC4. MD2-PSS is unsupported in the installed build. See [backend report](openssl.md). |
+| [cryptography](https://cryptography.io/en/latest/hazmat/primitives/) | Python access to OpenSSL and byte-level crypto APIs | ECDSA conversion/verification, X25519/X448, HKDF, ChaCha20/AEAD, Poly1305, CBC. This is not a second independent OpenSSL implementation. |
+| [Apache Santuario Java](https://santuario.apache.org/javaindex.html) | DOM, JSR-105 and StAX XML signatures and encryption; project reports EdDSA support since 3.0.2/2.3.3 | Recommended next XML-stack adapter; not run here. Check URI registration and JCA provider support separately, especially 2026 URIs and SignatureContext. |
+| [Bouncy Castle Java](https://www.bouncycastle.org/documentation/specification_interoperability/) | Broad classical and PQ primitives; useful as a JCA provider for Santuario and for legacy/stateful algorithms | Candidate for a third Camellia/SEED wrap implementation, XMSS/LMS, and further PQ tests; not run here. Provider support alone does not add XML mappings. |
+| [liboqs](https://openquantumsafe.org/liboqs/algorithms/) | ML-KEM, ML-DSA, SLH-DSA, FrodoKEM, LMS and XMSS families listed by the project | Candidate for gaps and a third PQ implementation; not run here. Pin algorithm/version/parameter set and context behavior. Do not substitute Kyber for ML-KEM or Dilithium for ML-DSA. |
+| [Microsoft FrodoKEM reference](https://github.com/microsoft/PQCrypto-LWEKE) | FrodoKEM implementation and upstream known-answer material | Candidate for Frodo/eFrodo coverage. Confirm the draft's standard versus ephemeral variant and exact revision before importing vectors. Not run here. |
+| [Cloudflare CIRCL X-Wing](https://pkg.go.dev/github.com/cloudflare/circl/kem/xwing) | X-Wing primitive implementation | Candidate for the X-Wing gap. Pin the referenced X-Wing specification; a generic ML-KEM/X25519 hybrid is not sufficient evidence of compatibility. Not run here. |
+
+Native PQ interoperability is now established with one XML stack (libxmlsec development build), with reverse signatures verified by PyCryptodome. Suggested next work: add Santuario+Bouncy Castle as a second independent PQ XML stack; cross-check the wrap fixtures there as a third implementation; then import pinned upstream known-answer vectors for stateful and remaining KEM families. Stateful signing tests need dedicated fixture state and must never reuse a production one-time signature key. Existing static public verification fixtures are the easiest starting point.
+
+Useful primary API references: [OpenSSL EdDSA instances/context](https://docs.openssl.org/3.6/man7/EVP_SIGNATURE-ED25519/), [OpenSSL ML-KEM](https://docs.openssl.org/3.6/man7/EVP_KEM-ML-KEM/), [OpenSSL SLH-DSA](https://docs.openssl.org/3.6/man7/EVP_SIGNATURE-SLH-DSA/), [PyCryptodome ChaCha20-Poly1305](https://www.pycryptodome.org/src/cipher/chacha20_poly1305).
+
+## Additional executed PQ XML stacks
+
+The later [implementation investigation](additional-implementations.md) records pinned builds and bidirectional results for structured-world/xml-sec and Bergshamra, plus source evidence for the open Santuario ML-DSA PR. These results supersede earlier candidate-only descriptions for the two Rust stacks.

@@ -1,0 +1,1250 @@
+{
+  "draft": "draft-eastlake-rfc9231bis-xmlsec-uris-11",
+  "python": "3.13.1",
+  "packages": {
+    "cryptography": "50.0.2",
+    "pycryptodome": "4.6.0",
+    "lxml": "6.1.3",
+    "signxml": "5.3.1",
+    "xmlsec": "1.3.18",
+    "pytest": "9.2.0"
+  },
+  "openssl_cli": "OpenSSL 3.6.4 25 Aug 2026 (Library: OpenSSL 3.6.4 25 Aug 2026)",
+  "cryptography_openssl": "OpenSSL 4.0.3 29 Sep 2026",
+  "libxmlsec_version": "1.3.13",
+  "suite": {
+    "tests": 946,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 2
+  },
+  "explicit_openssl_summary": {
+    "pass": 202,
+    "unsupported": 1
+  },
+  "libxmlsec_default_crypto": "openssl",
+  "uri_inventory_status": {
+    "implemented": 85,
+    "gap": 115
+  },
+  "primitive_results": [
+    {
+      "id": "digest-md5-0",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#md5",
+      "verifier": "Python hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "digest-md5-1",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#md5",
+      "verifier": "Python hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "digest-md5-2",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#md5",
+      "verifier": "Python hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "digest-md5-3",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#md5",
+      "verifier": "Python hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "digest-sha1-0",
+      "uri": "http://www.w3.org/2000/09/xmldsig#sha1",
+      "verifier": "Python hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "digest-sha1-1",
+      "uri": "http://www.w3.org/2000/09/xmldsig#sha1",
+      "verifier": "Python hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "digest-sha1-2",
+      "uri": "http://www.w3.org/2000/09/xmldsig#sha1",
+      "verifier": "Python hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "digest-sha1-3",
+      "uri": "http://www.w3.org/2000/09/xmldsig#sha1",
+      "verifier": "Python hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "digest-sha224-0",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#sha224",
+      "verifier": "Python hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "digest-sha224-1",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#sha224",
+      "verifier": "Python hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "digest-sha224-2",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#sha224",
+      "verifier": "Python hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "digest-sha224-3",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#sha224",
+      "verifier": "Python hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "digest-sha256-0",
+      "uri": "http://www.w3.org/2001/04/xmlenc#sha256",
+      "verifier": "Python hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "digest-sha256-1",
+      "uri": "http://www.w3.org/2001/04/xmlenc#sha256",
+      "verifier": "Python hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "digest-sha256-2",
+      "uri": "http://www.w3.org/2001/04/xmlenc#sha256",
+      "verifier": "Python hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "digest-sha256-3",
+      "uri": "http://www.w3.org/2001/04/xmlenc#sha256",
+      "verifier": "Python hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "digest-sha384-0",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#sha384",
+      "verifier": "Python hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "digest-sha384-1",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#sha384",
+      "verifier": "Python hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "digest-sha384-2",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#sha384",
+      "verifier": "Python hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "digest-sha384-3",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#sha384",
+      "verifier": "Python hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "digest-sha512-0",
+      "uri": "http://www.w3.org/2001/04/xmlenc#sha512",
+      "verifier": "Python hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "digest-sha512-1",
+      "uri": "http://www.w3.org/2001/04/xmlenc#sha512",
+      "verifier": "Python hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "digest-sha512-2",
+      "uri": "http://www.w3.org/2001/04/xmlenc#sha512",
+      "verifier": "Python hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "digest-sha512-3",
+      "uri": "http://www.w3.org/2001/04/xmlenc#sha512",
+      "verifier": "Python hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "digest-ripemd160-0",
+      "uri": "http://www.w3.org/2001/04/xmlenc#ripemd160",
+      "verifier": "Python hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "digest-ripemd160-1",
+      "uri": "http://www.w3.org/2001/04/xmlenc#ripemd160",
+      "verifier": "Python hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "digest-ripemd160-2",
+      "uri": "http://www.w3.org/2001/04/xmlenc#ripemd160",
+      "verifier": "Python hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "digest-ripemd160-3",
+      "uri": "http://www.w3.org/2001/04/xmlenc#ripemd160",
+      "verifier": "Python hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "digest-sha3-224-0",
+      "uri": "http://www.w3.org/2007/05/xmldsig-more#sha3-224",
+      "verifier": "Python hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "digest-sha3-224-1",
+      "uri": "http://www.w3.org/2007/05/xmldsig-more#sha3-224",
+      "verifier": "Python hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "digest-sha3-224-2",
+      "uri": "http://www.w3.org/2007/05/xmldsig-more#sha3-224",
+      "verifier": "Python hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "digest-sha3-224-3",
+      "uri": "http://www.w3.org/2007/05/xmldsig-more#sha3-224",
+      "verifier": "Python hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "digest-sha3-256-0",
+      "uri": "http://www.w3.org/2007/05/xmldsig-more#sha3-256",
+      "verifier": "Python hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "digest-sha3-256-1",
+      "uri": "http://www.w3.org/2007/05/xmldsig-more#sha3-256",
+      "verifier": "Python hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "digest-sha3-256-2",
+      "uri": "http://www.w3.org/2007/05/xmldsig-more#sha3-256",
+      "verifier": "Python hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "digest-sha3-256-3",
+      "uri": "http://www.w3.org/2007/05/xmldsig-more#sha3-256",
+      "verifier": "Python hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "digest-sha3-384-0",
+      "uri": "http://www.w3.org/2007/05/xmldsig-more#sha3-384",
+      "verifier": "Python hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "digest-sha3-384-1",
+      "uri": "http://www.w3.org/2007/05/xmldsig-more#sha3-384",
+      "verifier": "Python hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "digest-sha3-384-2",
+      "uri": "http://www.w3.org/2007/05/xmldsig-more#sha3-384",
+      "verifier": "Python hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "digest-sha3-384-3",
+      "uri": "http://www.w3.org/2007/05/xmldsig-more#sha3-384",
+      "verifier": "Python hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "digest-sha3-512-0",
+      "uri": "http://www.w3.org/2007/05/xmldsig-more#sha3-512",
+      "verifier": "Python hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "digest-sha3-512-1",
+      "uri": "http://www.w3.org/2007/05/xmldsig-more#sha3-512",
+      "verifier": "Python hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "digest-sha3-512-2",
+      "uri": "http://www.w3.org/2007/05/xmldsig-more#sha3-512",
+      "verifier": "Python hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "digest-sha3-512-3",
+      "uri": "http://www.w3.org/2007/05/xmldsig-more#sha3-512",
+      "verifier": "Python hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "digest-whirlpool-0",
+      "uri": "http://www.w3.org/2007/05/xmldsig-more#whirlpool",
+      "verifier": "OpenSSL (same implementation as generator)",
+      "result": "pass"
+    },
+    {
+      "id": "digest-whirlpool-1",
+      "uri": "http://www.w3.org/2007/05/xmldsig-more#whirlpool",
+      "verifier": "OpenSSL (same implementation as generator)",
+      "result": "pass"
+    },
+    {
+      "id": "digest-whirlpool-2",
+      "uri": "http://www.w3.org/2007/05/xmldsig-more#whirlpool",
+      "verifier": "OpenSSL (same implementation as generator)",
+      "result": "pass"
+    },
+    {
+      "id": "digest-whirlpool-3",
+      "uri": "http://www.w3.org/2007/05/xmldsig-more#whirlpool",
+      "verifier": "OpenSSL (same implementation as generator)",
+      "result": "pass"
+    },
+    {
+      "id": "hmac-md5-full",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#hmac-md5",
+      "verifier": "Python hmac/hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "hmac-md5-112",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#hmac-md5",
+      "verifier": "Python hmac/hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "hmac-sha224-full",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#hmac-sha224",
+      "verifier": "Python hmac/hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "hmac-sha224-112",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#hmac-sha224",
+      "verifier": "Python hmac/hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "hmac-sha256-full",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#hmac-sha256",
+      "verifier": "Python hmac/hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "hmac-sha256-112",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#hmac-sha256",
+      "verifier": "Python hmac/hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "hmac-sha384-full",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#hmac-sha384",
+      "verifier": "Python hmac/hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "hmac-sha384-112",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#hmac-sha384",
+      "verifier": "Python hmac/hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "hmac-sha512-full",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#hmac-sha512",
+      "verifier": "Python hmac/hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "hmac-sha512-112",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#hmac-sha512",
+      "verifier": "Python hmac/hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "hmac-ripemd160-full",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#hmac-ripemd160",
+      "verifier": "Python hmac/hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "hmac-ripemd160-112",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#hmac-ripemd160",
+      "verifier": "Python hmac/hashlib (explicit OpenSSL audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "poly1305-rfc8439",
+      "uri": "http://www.w3.org/2021/04/xmldsig-more#poly1305",
+      "verifier": "cryptography/OpenSSL against RFC 8439",
+      "result": "pass"
+    },
+    {
+      "id": "siphash-empty",
+      "uri": "http://www.w3.org/2021/04/xmldsig-more#siphash-2-4",
+      "verifier": "OpenSSL against SipHash reference",
+      "result": "pass"
+    },
+    {
+      "id": "rsa-md5",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#rsa-md5",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "rsa-sha224",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#rsa-sha224",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "rsa-sha256",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#rsa-sha256",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "rsa-sha384",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#rsa-sha384",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "rsa-sha512",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#rsa-sha512",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "rsa-ripemd160",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#rsa-ripemd160",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "pss-md5",
+      "uri": "http://www.w3.org/2007/05/xmldsig-more#md5-rsa-MGF1",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "pss-sha1",
+      "uri": "http://www.w3.org/2007/05/xmldsig-more#sha1-rsa-MGF1",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "pss-sha224",
+      "uri": "http://www.w3.org/2007/05/xmldsig-more#sha224-rsa-MGF1",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "pss-sha256",
+      "uri": "http://www.w3.org/2007/05/xmldsig-more#sha256-rsa-MGF1",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "pss-sha384",
+      "uri": "http://www.w3.org/2007/05/xmldsig-more#sha384-rsa-MGF1",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "pss-sha512",
+      "uri": "http://www.w3.org/2007/05/xmldsig-more#sha512-rsa-MGF1",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "pss-ripemd160",
+      "uri": "http://www.w3.org/2007/05/xmldsig-more#ripemd160-rsa-MGF1",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "pss-sha3-224",
+      "uri": "http://www.w3.org/2007/05/xmldsig-more#sha3-224-rsa-MGF1",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "pss-sha3-256",
+      "uri": "http://www.w3.org/2007/05/xmldsig-more#sha3-256-rsa-MGF1",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "pss-sha3-384",
+      "uri": "http://www.w3.org/2007/05/xmldsig-more#sha3-384-rsa-MGF1",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "pss-sha3-512",
+      "uri": "http://www.w3.org/2007/05/xmldsig-more#sha3-512-rsa-MGF1",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "pss-md2",
+      "uri": "http://www.w3.org/2007/05/xmldsig-more#md2-rsa-MGF1",
+      "verifier": "PyCryptodome (same implementation; no independent MD2 backend)",
+      "result": "pass"
+    },
+    {
+      "id": "pss-default-parameters",
+      "uri": "http://www.w3.org/2007/05/xmldsig-more#rsa-pss",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "ecdsa-P-256-sha1",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha1",
+      "verifier": "cryptography/OpenSSL (XML r||s converted to DER)",
+      "result": "pass"
+    },
+    {
+      "id": "ecdsa-P-256-sha224",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha224",
+      "verifier": "cryptography/OpenSSL (XML r||s converted to DER)",
+      "result": "pass"
+    },
+    {
+      "id": "ecdsa-P-256-sha256",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256",
+      "verifier": "cryptography/OpenSSL (XML r||s converted to DER)",
+      "result": "pass"
+    },
+    {
+      "id": "ecdsa-P-256-sha384",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha384",
+      "verifier": "cryptography/OpenSSL (XML r||s converted to DER)",
+      "result": "pass"
+    },
+    {
+      "id": "ecdsa-P-256-sha512",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha512",
+      "verifier": "cryptography/OpenSSL (XML r||s converted to DER)",
+      "result": "pass"
+    },
+    {
+      "id": "ecdsa-P-256-sha3-224",
+      "uri": "http://www.w3.org/2021/04/xmldsig-more#ecdsa-sha3-224",
+      "verifier": "cryptography/OpenSSL (XML r||s converted to DER)",
+      "result": "pass"
+    },
+    {
+      "id": "ecdsa-P-256-sha3-256",
+      "uri": "http://www.w3.org/2021/04/xmldsig-more#ecdsa-sha3-256",
+      "verifier": "cryptography/OpenSSL (XML r||s converted to DER)",
+      "result": "pass"
+    },
+    {
+      "id": "ecdsa-P-256-sha3-384",
+      "uri": "http://www.w3.org/2021/04/xmldsig-more#ecdsa-sha3-384",
+      "verifier": "cryptography/OpenSSL (XML r||s converted to DER)",
+      "result": "pass"
+    },
+    {
+      "id": "ecdsa-P-256-sha3-512",
+      "uri": "http://www.w3.org/2021/04/xmldsig-more#ecdsa-sha3-512",
+      "verifier": "cryptography/OpenSSL (XML r||s converted to DER)",
+      "result": "pass"
+    },
+    {
+      "id": "ecdsa-P-384-sha1",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha1",
+      "verifier": "cryptography/OpenSSL (XML r||s converted to DER)",
+      "result": "pass"
+    },
+    {
+      "id": "ecdsa-P-384-sha224",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha224",
+      "verifier": "cryptography/OpenSSL (XML r||s converted to DER)",
+      "result": "pass"
+    },
+    {
+      "id": "ecdsa-P-384-sha256",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256",
+      "verifier": "cryptography/OpenSSL (XML r||s converted to DER)",
+      "result": "pass"
+    },
+    {
+      "id": "ecdsa-P-384-sha384",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha384",
+      "verifier": "cryptography/OpenSSL (XML r||s converted to DER)",
+      "result": "pass"
+    },
+    {
+      "id": "ecdsa-P-384-sha512",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha512",
+      "verifier": "cryptography/OpenSSL (XML r||s converted to DER)",
+      "result": "pass"
+    },
+    {
+      "id": "ecdsa-P-384-sha3-224",
+      "uri": "http://www.w3.org/2021/04/xmldsig-more#ecdsa-sha3-224",
+      "verifier": "cryptography/OpenSSL (XML r||s converted to DER)",
+      "result": "pass"
+    },
+    {
+      "id": "ecdsa-P-384-sha3-256",
+      "uri": "http://www.w3.org/2021/04/xmldsig-more#ecdsa-sha3-256",
+      "verifier": "cryptography/OpenSSL (XML r||s converted to DER)",
+      "result": "pass"
+    },
+    {
+      "id": "ecdsa-P-384-sha3-384",
+      "uri": "http://www.w3.org/2021/04/xmldsig-more#ecdsa-sha3-384",
+      "verifier": "cryptography/OpenSSL (XML r||s converted to DER)",
+      "result": "pass"
+    },
+    {
+      "id": "ecdsa-P-384-sha3-512",
+      "uri": "http://www.w3.org/2021/04/xmldsig-more#ecdsa-sha3-512",
+      "verifier": "cryptography/OpenSSL (XML r||s converted to DER)",
+      "result": "pass"
+    },
+    {
+      "id": "ecdsa-P-521-sha1",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha1",
+      "verifier": "cryptography/OpenSSL (XML r||s converted to DER)",
+      "result": "pass"
+    },
+    {
+      "id": "ecdsa-P-521-sha224",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha224",
+      "verifier": "cryptography/OpenSSL (XML r||s converted to DER)",
+      "result": "pass"
+    },
+    {
+      "id": "ecdsa-P-521-sha256",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256",
+      "verifier": "cryptography/OpenSSL (XML r||s converted to DER)",
+      "result": "pass"
+    },
+    {
+      "id": "ecdsa-P-521-sha384",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha384",
+      "verifier": "cryptography/OpenSSL (XML r||s converted to DER)",
+      "result": "pass"
+    },
+    {
+      "id": "ecdsa-P-521-sha512",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha512",
+      "verifier": "cryptography/OpenSSL (XML r||s converted to DER)",
+      "result": "pass"
+    },
+    {
+      "id": "ecdsa-P-521-sha3-224",
+      "uri": "http://www.w3.org/2021/04/xmldsig-more#ecdsa-sha3-224",
+      "verifier": "cryptography/OpenSSL (XML r||s converted to DER)",
+      "result": "pass"
+    },
+    {
+      "id": "ecdsa-P-521-sha3-256",
+      "uri": "http://www.w3.org/2021/04/xmldsig-more#ecdsa-sha3-256",
+      "verifier": "cryptography/OpenSSL (XML r||s converted to DER)",
+      "result": "pass"
+    },
+    {
+      "id": "ecdsa-P-521-sha3-384",
+      "uri": "http://www.w3.org/2021/04/xmldsig-more#ecdsa-sha3-384",
+      "verifier": "cryptography/OpenSSL (XML r||s converted to DER)",
+      "result": "pass"
+    },
+    {
+      "id": "ecdsa-P-521-sha3-512",
+      "uri": "http://www.w3.org/2021/04/xmldsig-more#ecdsa-sha3-512",
+      "verifier": "cryptography/OpenSSL (XML r||s converted to DER)",
+      "result": "pass"
+    },
+    {
+      "id": "ed25519-empty",
+      "uri": "http://www.w3.org/2021/04/xmldsig-more#eddsa-ed25519",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "ed25519ctx-786d6c736563",
+      "uri": "http://www.w3.org/2021/04/xmldsig-more#eddsa-ed25519ctx",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "ed25519ph-empty",
+      "uri": "http://www.w3.org/2021/04/xmldsig-more#eddsa-ed25519ph",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "ed25519ph-786d6c736563",
+      "uri": "http://www.w3.org/2021/04/xmldsig-more#eddsa-ed25519ph",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "ed448-empty",
+      "uri": "http://www.w3.org/2021/04/xmldsig-more#eddsa-ed448",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "ed448-786d6c736563",
+      "uri": "http://www.w3.org/2021/04/xmldsig-more#eddsa-ed448",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "ed448ph-empty",
+      "uri": "http://www.w3.org/2021/04/xmldsig-more#eddsa-ed448ph",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "ed448ph-786d6c736563",
+      "uri": "http://www.w3.org/2021/04/xmldsig-more#eddsa-ed448ph",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "ml-dsa-44-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#ml-dsa-44",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "ml-dsa-44-786d6c736563",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#ml-dsa-44",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "ml-dsa-65-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#ml-dsa-65",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "ml-dsa-65-786d6c736563",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#ml-dsa-65",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "ml-dsa-87-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#ml-dsa-87",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "ml-dsa-87-786d6c736563",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#ml-dsa-87",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "slh-dsa-sha2-128s-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-128s",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "slh-dsa-sha2-128s-786d6c736563",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-128s",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "slh-dsa-sha2-128f-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-128f",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "slh-dsa-sha2-128f-786d6c736563",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-128f",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "slh-dsa-sha2-192s-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-192s",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "slh-dsa-sha2-192s-786d6c736563",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-192s",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "slh-dsa-sha2-192f-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-192f",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "slh-dsa-sha2-192f-786d6c736563",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-192f",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "slh-dsa-sha2-256s-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-256s",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "slh-dsa-sha2-256s-786d6c736563",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-256s",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "slh-dsa-sha2-256f-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-256f",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "slh-dsa-sha2-256f-786d6c736563",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-sha2-256f",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "slh-dsa-shake-128s-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-128s",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "slh-dsa-shake-128s-786d6c736563",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-128s",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "slh-dsa-shake-128f-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-128f",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "slh-dsa-shake-128f-786d6c736563",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-128f",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "slh-dsa-shake-192s-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-192s",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "slh-dsa-shake-192s-786d6c736563",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-192s",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "slh-dsa-shake-192f-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-192f",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "slh-dsa-shake-192f-786d6c736563",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-192f",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "slh-dsa-shake-256s-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-256s",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "slh-dsa-shake-256s-786d6c736563",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-256s",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "slh-dsa-shake-256f-empty",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-256f",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "slh-dsa-shake-256f-786d6c736563",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#slh-dsa-shake-256f",
+      "verifier": "OpenSSL CLI",
+      "result": "pass"
+    },
+    {
+      "id": "ml-kem-512",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#ml-kem-512",
+      "verifier": "OpenSSL CLI (including implicit rejection)",
+      "result": "pass"
+    },
+    {
+      "id": "ml-kem-768",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#ml-kem-768",
+      "verifier": "OpenSSL CLI (including implicit rejection)",
+      "result": "pass"
+    },
+    {
+      "id": "ml-kem-1024",
+      "uri": "http://www.w3.org/2026/08/xmldsig-more#ml-kem-1024",
+      "verifier": "OpenSSL CLI (including implicit rejection)",
+      "result": "pass"
+    },
+    {
+      "id": "x25519",
+      "uri": "http://www.w3.org/2021/04/xmldsig-more#x25519",
+      "verifier": "cryptography/OpenSSL",
+      "result": "pass"
+    },
+    {
+      "id": "x448",
+      "uri": "http://www.w3.org/2021/04/xmldsig-more#x448",
+      "verifier": "cryptography/OpenSSL",
+      "result": "pass"
+    },
+    {
+      "id": "hkdf-0",
+      "uri": "http://www.w3.org/2021/04/xmldsig-more#hkdf",
+      "verifier": "cryptography/OpenSSL",
+      "result": "pass"
+    },
+    {
+      "id": "hkdf-1",
+      "uri": "http://www.w3.org/2021/04/xmldsig-more#hkdf",
+      "verifier": "cryptography/OpenSSL",
+      "result": "pass"
+    },
+    {
+      "id": "hkdf-2",
+      "uri": "http://www.w3.org/2021/04/xmldsig-more#hkdf",
+      "verifier": "cryptography/OpenSSL",
+      "result": "pass"
+    },
+    {
+      "id": "chacha20-0",
+      "uri": "http://www.w3.org/2021/04/xmldsig-more#chacha20",
+      "verifier": "cryptography/OpenSSL (RFC8439 state; counter does not overflow)",
+      "result": "pass"
+    },
+    {
+      "id": "chacha20poly1305-0-empty",
+      "uri": "http://www.w3.org/2021/04/xmldsig-more#chacha20poly1305",
+      "verifier": "cryptography/OpenSSL",
+      "result": "pass"
+    },
+    {
+      "id": "chacha20poly1305-0-584d4c20414144",
+      "uri": "http://www.w3.org/2021/04/xmldsig-more#chacha20poly1305",
+      "verifier": "cryptography/OpenSSL",
+      "result": "pass"
+    },
+    {
+      "id": "chacha20-1",
+      "uri": "http://www.w3.org/2021/04/xmldsig-more#chacha20",
+      "verifier": "cryptography/OpenSSL (RFC8439 state; counter does not overflow)",
+      "result": "pass"
+    },
+    {
+      "id": "chacha20poly1305-1-empty",
+      "uri": "http://www.w3.org/2021/04/xmldsig-more#chacha20poly1305",
+      "verifier": "cryptography/OpenSSL",
+      "result": "pass"
+    },
+    {
+      "id": "chacha20poly1305-1-584d4c20414144",
+      "uri": "http://www.w3.org/2021/04/xmldsig-more#chacha20poly1305",
+      "verifier": "cryptography/OpenSSL",
+      "result": "pass"
+    },
+    {
+      "id": "chacha20-2",
+      "uri": "http://www.w3.org/2021/04/xmldsig-more#chacha20",
+      "verifier": "cryptography/OpenSSL (RFC8439 state; counter does not overflow)",
+      "result": "pass"
+    },
+    {
+      "id": "chacha20poly1305-2-empty",
+      "uri": "http://www.w3.org/2021/04/xmldsig-more#chacha20poly1305",
+      "verifier": "cryptography/OpenSSL",
+      "result": "pass"
+    },
+    {
+      "id": "chacha20poly1305-2-584d4c20414144",
+      "uri": "http://www.w3.org/2021/04/xmldsig-more#chacha20poly1305",
+      "verifier": "cryptography/OpenSSL",
+      "result": "pass"
+    },
+    {
+      "id": "chacha20-3",
+      "uri": "http://www.w3.org/2021/04/xmldsig-more#chacha20",
+      "verifier": "cryptography/OpenSSL (RFC8439 state; counter does not overflow)",
+      "result": "pass"
+    },
+    {
+      "id": "chacha20poly1305-3-empty",
+      "uri": "http://www.w3.org/2021/04/xmldsig-more#chacha20poly1305",
+      "verifier": "cryptography/OpenSSL",
+      "result": "pass"
+    },
+    {
+      "id": "chacha20poly1305-3-584d4c20414144",
+      "uri": "http://www.w3.org/2021/04/xmldsig-more#chacha20poly1305",
+      "verifier": "cryptography/OpenSSL",
+      "result": "pass"
+    },
+    {
+      "id": "arcfour-reference",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#arcfour",
+      "verifier": "PyCryptodome / published RC4 example (OpenSSL EVP audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "camellia128-cbc-0",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#camellia128-cbc",
+      "verifier": "OpenSSL CLI (same crypto backend; explicit XML padding and IV packaging)",
+      "result": "pass"
+    },
+    {
+      "id": "camellia128-cbc-1",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#camellia128-cbc",
+      "verifier": "OpenSSL CLI (same crypto backend; explicit XML padding and IV packaging)",
+      "result": "pass"
+    },
+    {
+      "id": "camellia128-cbc-15",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#camellia128-cbc",
+      "verifier": "OpenSSL CLI (same crypto backend; explicit XML padding and IV packaging)",
+      "result": "pass"
+    },
+    {
+      "id": "camellia128-cbc-16",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#camellia128-cbc",
+      "verifier": "OpenSSL CLI (same crypto backend; explicit XML padding and IV packaging)",
+      "result": "pass"
+    },
+    {
+      "id": "camellia128-cbc-17",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#camellia128-cbc",
+      "verifier": "OpenSSL CLI (same crypto backend; explicit XML padding and IV packaging)",
+      "result": "pass"
+    },
+    {
+      "id": "camellia128-cbc-32",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#camellia128-cbc",
+      "verifier": "OpenSSL CLI (same crypto backend; explicit XML padding and IV packaging)",
+      "result": "pass"
+    },
+    {
+      "id": "kw-camellia128-16",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#kw-camellia128",
+      "verifier": "local RFC3394 round trip (native OpenSSL wrapping audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "kw-camellia128-24",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#kw-camellia128",
+      "verifier": "local RFC3394 round trip (native OpenSSL wrapping audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "kw-camellia128-32",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#kw-camellia128",
+      "verifier": "local RFC3394 round trip (native OpenSSL wrapping audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "camellia192-cbc-0",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#camellia192-cbc",
+      "verifier": "OpenSSL CLI (same crypto backend; explicit XML padding and IV packaging)",
+      "result": "pass"
+    },
+    {
+      "id": "camellia192-cbc-1",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#camellia192-cbc",
+      "verifier": "OpenSSL CLI (same crypto backend; explicit XML padding and IV packaging)",
+      "result": "pass"
+    },
+    {
+      "id": "camellia192-cbc-15",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#camellia192-cbc",
+      "verifier": "OpenSSL CLI (same crypto backend; explicit XML padding and IV packaging)",
+      "result": "pass"
+    },
+    {
+      "id": "camellia192-cbc-16",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#camellia192-cbc",
+      "verifier": "OpenSSL CLI (same crypto backend; explicit XML padding and IV packaging)",
+      "result": "pass"
+    },
+    {
+      "id": "camellia192-cbc-17",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#camellia192-cbc",
+      "verifier": "OpenSSL CLI (same crypto backend; explicit XML padding and IV packaging)",
+      "result": "pass"
+    },
+    {
+      "id": "camellia192-cbc-32",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#camellia192-cbc",
+      "verifier": "OpenSSL CLI (same crypto backend; explicit XML padding and IV packaging)",
+      "result": "pass"
+    },
+    {
+      "id": "kw-camellia192-16",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#kw-camellia192",
+      "verifier": "local RFC3394 round trip (native OpenSSL wrapping audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "kw-camellia192-24",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#kw-camellia192",
+      "verifier": "local RFC3394 round trip (native OpenSSL wrapping audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "kw-camellia192-32",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#kw-camellia192",
+      "verifier": "local RFC3394 round trip (native OpenSSL wrapping audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "camellia256-cbc-0",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#camellia256-cbc",
+      "verifier": "OpenSSL CLI (same crypto backend; explicit XML padding and IV packaging)",
+      "result": "pass"
+    },
+    {
+      "id": "camellia256-cbc-1",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#camellia256-cbc",
+      "verifier": "OpenSSL CLI (same crypto backend; explicit XML padding and IV packaging)",
+      "result": "pass"
+    },
+    {
+      "id": "camellia256-cbc-15",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#camellia256-cbc",
+      "verifier": "OpenSSL CLI (same crypto backend; explicit XML padding and IV packaging)",
+      "result": "pass"
+    },
+    {
+      "id": "camellia256-cbc-16",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#camellia256-cbc",
+      "verifier": "OpenSSL CLI (same crypto backend; explicit XML padding and IV packaging)",
+      "result": "pass"
+    },
+    {
+      "id": "camellia256-cbc-17",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#camellia256-cbc",
+      "verifier": "OpenSSL CLI (same crypto backend; explicit XML padding and IV packaging)",
+      "result": "pass"
+    },
+    {
+      "id": "camellia256-cbc-32",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#camellia256-cbc",
+      "verifier": "OpenSSL CLI (same crypto backend; explicit XML padding and IV packaging)",
+      "result": "pass"
+    },
+    {
+      "id": "kw-camellia256-16",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#kw-camellia256",
+      "verifier": "local RFC3394 round trip (native OpenSSL wrapping audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "kw-camellia256-24",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#kw-camellia256",
+      "verifier": "local RFC3394 round trip (native OpenSSL wrapping audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "kw-camellia256-32",
+      "uri": "http://www.w3.org/2001/04/xmldsig-more#kw-camellia256",
+      "verifier": "local RFC3394 round trip (native OpenSSL wrapping audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "seed128-cbc-0",
+      "uri": "http://www.w3.org/2007/05/xmldsig-more#seed128-cbc",
+      "verifier": "OpenSSL CLI (same crypto backend; explicit XML padding and IV packaging)",
+      "result": "pass"
+    },
+    {
+      "id": "seed128-cbc-1",
+      "uri": "http://www.w3.org/2007/05/xmldsig-more#seed128-cbc",
+      "verifier": "OpenSSL CLI (same crypto backend; explicit XML padding and IV packaging)",
+      "result": "pass"
+    },
+    {
+      "id": "seed128-cbc-15",
+      "uri": "http://www.w3.org/2007/05/xmldsig-more#seed128-cbc",
+      "verifier": "OpenSSL CLI (same crypto backend; explicit XML padding and IV packaging)",
+      "result": "pass"
+    },
+    {
+      "id": "seed128-cbc-16",
+      "uri": "http://www.w3.org/2007/05/xmldsig-more#seed128-cbc",
+      "verifier": "OpenSSL CLI (same crypto backend; explicit XML padding and IV packaging)",
+      "result": "pass"
+    },
+    {
+      "id": "seed128-cbc-17",
+      "uri": "http://www.w3.org/2007/05/xmldsig-more#seed128-cbc",
+      "verifier": "OpenSSL CLI (same crypto backend; explicit XML padding and IV packaging)",
+      "result": "pass"
+    },
+    {
+      "id": "seed128-cbc-32",
+      "uri": "http://www.w3.org/2007/05/xmldsig-more#seed128-cbc",
+      "verifier": "OpenSSL CLI (same crypto backend; explicit XML padding and IV packaging)",
+      "result": "pass"
+    },
+    {
+      "id": "kw-seed128-16",
+      "uri": "http://www.w3.org/2007/05/xmldsig-more#kw-seed128",
+      "verifier": "local RFC3394 round trip (native OpenSSL wrapping audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "kw-seed128-24",
+      "uri": "http://www.w3.org/2007/05/xmldsig-more#kw-seed128",
+      "verifier": "local RFC3394 round trip (native OpenSSL wrapping audit recorded separately)",
+      "result": "pass"
+    },
+    {
+      "id": "kw-seed128-32",
+      "uri": "http://www.w3.org/2007/05/xmldsig-more#kw-seed128",
+      "verifier": "local RFC3394 round trip (native OpenSSL wrapping audit recorded separately)",
+      "result": "pass"
+    }
+  ]
+}
